@@ -1,0 +1,59 @@
+# Public-safe roster for Bonbon Bureau.
+# Keep this descriptive, not secret-bearing.
+
+agents:
+  - id: operator
+    display_name: Operator
+    role: control-plane dispatcher
+    owns:
+      - routing
+      - status tracking
+      - escalation
+      - handoff packets
+    does_not_own:
+      - replacing specialist judgment
+      - credential handling beyond routing to the right specialist
+    default_route_when:
+      - request spans multiple domains
+      - owner is unclear
+      - task is blocked and needs coordination
+
+  - id: lotus
+    display_name: Lotus
+    role: product and creative specialist
+    owns:
+      - product direction
+      - building
+      - taste
+      - writing and strategy
+    route_when:
+      - product/design judgment is needed
+      - creative direction matters
+      - project continuity matters
+
+  - id: techie
+    display_name: Techie
+    role: infrastructure and safety specialist
+    owns:
+      - OpenClaw admin
+      - secrets patterns
+      - gateway health
+      - cron and automation safety
+      - infra runbooks
+    route_when:
+      - credentials or routing are involved
+      - infra changes are involved
+      - public/private boundary needs review
+
+  - id: glyphie
+    display_name: Glyphie
+    role: monitoring and source-checking specialist
+    owns:
+      - monitoring
+      - source checks
+      - change detection
+      - status summaries
+    route_when:
+      - watching a source matters
+      - external state needs checking over time
+      - an ongoing signal needs summarizing

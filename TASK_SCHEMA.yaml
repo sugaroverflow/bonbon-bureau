@@ -1,0 +1,25 @@
+# Canonical task/handoff shape.
+# This is intentionally boring so humans and agents can both read it.
+
+id: string              # e.g. bb-2026-0001
+title: string
+requester: string       # human, operator, or agent id
+status: enum            # proposed | routed | in_progress | waiting | blocked | done | cancelled
+owner: string           # agent id or human
+priority: enum          # low | normal | high | urgent
+category: enum          # product | infra | monitoring | coordination | research | chore | unknown
+context: string         # public-safe summary; avoid raw private data
+desired_output: string
+next_action: string
+blocked_on: string|null
+created_at: datetime
+updated_at: datetime
+
+handoff:
+  from: string
+  to: string
+  reason: string
+  ownership: enum       # handoff | bounded_help
+  included_context: string
+  excluded_context: string
+  safety_notes: string|null
