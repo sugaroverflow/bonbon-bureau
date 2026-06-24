@@ -40,6 +40,7 @@ This repo is a scaffold for:
 - [ROADMAP.md](ROADMAP.md) — phased plan for building the Bureau.
 - [docs/openclaw-integration.md](docs/openclaw-integration.md) — mapping to OpenClaw runtime concepts.
 - [docs/secrets-pattern.md](docs/secrets-pattern.md) — public-safe credential handling pattern.
+- [docs/credential-sharing.md](docs/credential-sharing.md) — capability-based credential sharing between agents.
 - [docs/langgraph-routing-spike.md](docs/langgraph-routing-spike.md) — router spike shape and non-goals.
 - [docs/router-validation.md](docs/router-validation.md) — dependency-free fixture checks for routing behavior.
 - [docs/agent-files.md](docs/agent-files.md) — public-safe copies of agent workspace files.
