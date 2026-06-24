@@ -20,16 +20,14 @@ Use labels to make agent involvement searchable:
 
 ```text
 bonbon-factory
-agent:techie
+agent:agentName
 ```
 
 Other examples:
 
 ```text
 bonbon-factory
-agent:lotus
-agent:glyphie
-agent:operator
+agent:agentName
 ```
 
 ### PR description
@@ -39,21 +37,6 @@ Include a short Bonbon Bureau block:
 ```md
 ## Bonbon Bureau
 
-Prepared by: Techie
-Routed by: Operator
-Mode: agent-assisted
-Human owner: Fatima
-Human review required before merge: yes
+Agent: Techie
+Human: @sugaroverflow
 ```
-
-Use `agent-authored` instead of `agent-assisted` when the agent prepared most of the diff.
-
-## Not required
-
-- No separate GitHub bot account is required.
-- No commit trailer is required.
-- No agent should merge on its own unless a repository explicitly opts into that workflow.
-
-## Why
-
-This keeps attribution public, cute, and searchable while avoiding extra credential management and pretending agents are separate GitHub users.
