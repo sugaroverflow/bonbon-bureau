@@ -12,7 +12,7 @@ Bonbon Bureau is a way to explain a personal multi-agent setup without pretendin
 
 > Do the chores and prep the materials so my agents and I can do the interesting work.
 
-## Demo-safe examples
+## Public-safe task examples
 
 - Route a product idea to Lotus.
 - Route a credential rotation plan to Techie.

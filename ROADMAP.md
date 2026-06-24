@@ -1,6 +1,6 @@
 # Roadmap
 
-Bonbon Bureau should stay small, public-safe, and demo-able. This roadmap tracks the multi-phase plan without pulling Candyland into scope too early.
+Bonbon Bureau should stay small, public-safe, and grounded in real repeated work. This roadmap tracks the multi-phase plan without pulling Candyland into scope too early.
 
 ## Phase 1: Bureau scaffold
 
@@ -24,6 +24,7 @@ Exit criteria:
 - Someone can read the repo and understand Bonbon Bureau in five minutes.
 - Public/private boundaries are clear.
 - Agent responsibilities are legible.
+
 ## Phase 2: Miette workspace
 
 Goal: define the Operator agent as a real named collaborator.
@@ -88,19 +89,18 @@ Exit criteria:
 - Credentials are referenced through 1Password/envprov/keyRefs or environment indirection.
 - Verification happens by use, not by printing values.
 
-## Phase 6: Demo path
+## Phase 6: Real task pattern library
 
-Goal: produce a conference-talk-friendly walkthrough.
+Goal: seed routing from tasks agents on this server have actually performed.
 
 Artifacts:
 
-- `docs/public-talk-notes.md`
-- future demo script in the Idea Pantry until ready
+- `patterns/`
+- `fixtures/tasks/`
 
 Exit criteria:
 
-- Human asks Miette for help.
-- Miette routes to a specialist.
-- Specialist prepares a small PR.
-- PR uses Bonbon Bureau attribution labels/block.
-- Human review remains explicit.
+- Repetitive tasks are described as public-safe patterns.
+- Router fixtures are based on those patterns, not synthetic sample tasks.
+- Fixtures cover infra, monitoring, and product/infra handoff cases.
+- Private IDs, local paths, secrets, and raw transcripts are excluded.

@@ -8,11 +8,11 @@ from __future__ import annotations
 
 import json
 import sys
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
 
 
-@dataclass
+@dataclass(frozen=True)
 class Route:
     category: str
     owner: str
@@ -21,9 +21,38 @@ class Route:
 
 
 ROUTES: list[tuple[set[str], Route]] = [
-    ({"secret", "credential", "token", "gateway", "infra", "cron", "routing", "security"}, Route("infra", "techie", "handoff", "Infrastructure, credentials, or safety language detected.")),
-    ({"product", "copy", "design", "taste", "feature", "strategy", "build"}, Route("product", "lotus", "handoff", "Product, creative, or building language detected.")),
-    ({"monitor", "watch", "source", "check", "alert", "status"}, Route("monitoring", "glyphie", "handoff", "Monitoring or source-checking language detected.")),
+    (
+        {
+            "secret",
+            "credential",
+            "token",
+            "keyref",
+            "secretref",
+            "envprov",
+            "gateway",
+            "infra",
+            "cron",
+            "routing",
+            "security",
+            "discord",
+            "channel",
+            "binding",
+            "plugin",
+            "gitleaks",
+            "pre-commit",
+            "audit",
+            "health",
+        },
+        Route("infra", "techie", "handoff", "Infrastructure, credentials, channels, or safety language detected."),
+    ),
+    (
+        {"product", "copy", "design", "taste", "feature", "strategy", "build"},
+        Route("product", "lotus", "handoff", "Product, creative, or building language detected."),
+    ),
+    (
+        {"monitor", "monitoring", "watch", "source", "check", "alert", "status", "research", "cite", "changed"},
+        Route("monitoring", "glyphie", "handoff", "Monitoring or source-checking language detected."),
+    ),
 ]
 
 DEFAULT = Route("coordination", "miette", "bounded_help", "No specialist route was obvious; keep coordination with Miette.")
@@ -47,10 +76,12 @@ def handoff_packet(text: str) -> dict:
         "status": "proposed",
         "owner": route.owner,
         "priority": "normal",
+        "deadline": None,
         "category": route.category,
         "context": text,
         "desired_output": "Route this task and prepare the next action.",
         "next_action": f"Send to {route.owner} with minimal necessary context.",
+        "blockers": [],
         "blocked_on": None,
         "created_at": now,
         "updated_at": now,

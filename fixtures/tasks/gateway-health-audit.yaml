@@ -1,0 +1,25 @@
+id: bb-fixture-gateway-health-audit
+source_pattern: patterns/gateway-health-audit.md
+title: Run a read-only gateway health and exposure audit
+requester: fatima
+status: proposed
+owner: techie
+priority: normal
+deadline: null
+category: infra
+context: >-
+  Check OpenClaw gateway/channel health and summarize exposure/security warnings without changing configuration.
+desired_output: Read-only status summary with severity and reversible recommendations.
+next_action: Route to Techie to inspect status, channel health, auth posture, firewall/SSH basics, and audit warnings.
+blockers: []
+blocked_on: null
+created_at: 2026-06-24T00:00:00Z
+updated_at: 2026-06-24T00:00:00Z
+handoff:
+  from: miette
+  to: techie
+  reason: Gateway health and host exposure checks are infrastructure safety work.
+  ownership: handoff
+  included_context: Audit scope and read-only constraint.
+  excluded_context: Raw tokens, private account IDs, and unnecessary config dumps.
+  safety_notes: Inspect first; do not mutate config unless separately approved.

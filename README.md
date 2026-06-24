@@ -42,6 +42,8 @@ This repo is a scaffold for:
 - [docs/secrets-pattern.md](docs/secrets-pattern.md) — public-safe credential handling pattern.
 - [docs/langgraph-routing-spike.md](docs/langgraph-routing-spike.md) — router spike shape and non-goals.
 - [docs/agent-files.md](docs/agent-files.md) — public-safe copies of agent workspace files.
+- [patterns/](patterns/) — recurring task patterns distilled from real agent work.
+- [fixtures/tasks/](fixtures/tasks/) — public-safe router fixtures based on those patterns.
 - [docs/agent-pr-conventions.md](docs/agent-pr-conventions.md) — how Bonbon Bureau agents label/describe PRs across repos.
 - [docs/idea-pantry.md](docs/idea-pantry.md) — parking lot for future ideas and maybe-later architecture.
 

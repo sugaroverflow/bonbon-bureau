@@ -1,0 +1,25 @@
+id: bb-fixture-monitoring-source-check
+source_pattern: patterns/monitoring-agent-setup.md
+title: Check whether monitored sources changed
+requester: fatima
+status: proposed
+owner: glyphie
+priority: normal
+deadline: null
+category: monitoring
+context: >-
+  A recurring source list needs checking. Summarize what changed, cite sources, and say clearly if nothing changed.
+desired_output: Short cited monitoring summary with confirmed changes and uncertain signals separated.
+next_action: Route to Glyphie for source checking and citation-first summary.
+blockers: []
+blocked_on: null
+created_at: 2026-06-24T00:00:00Z
+updated_at: 2026-06-24T00:00:00Z
+handoff:
+  from: miette
+  to: glyphie
+  reason: Monitoring, source checks, and cited summaries are Glyphie work.
+  ownership: handoff
+  included_context: Public source list and desired summary cadence.
+  excluded_context: Private motives, raw private notes, and uncited claims.
+  safety_notes: Respect ToS; do not republish gated content.

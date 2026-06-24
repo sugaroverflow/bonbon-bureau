@@ -1,0 +1,25 @@
+id: bb-fixture-envprov-keyref-migration
+source_pattern: patterns/envprov-keyref-migration.md
+title: Move an auth profile API key to envprov
+requester: fatima
+status: proposed
+owner: techie
+priority: normal
+deadline: null
+category: infra
+context: >-
+  An OpenClaw auth profile should stop storing a credential directly and instead reference an envprov/keyRef value. Verify the audit result without printing the secret.
+desired_output: Public-safe migration checklist and verification summary.
+next_action: Route to Techie to inspect current config, patch the reference, and verify by audit/use.
+blockers: []
+blocked_on: null
+created_at: 2026-06-24T00:00:00Z
+updated_at: 2026-06-24T00:00:00Z
+handoff:
+  from: miette
+  to: techie
+  reason: Credential storage and OpenClaw auth profile migration are infra/safety work.
+  ownership: handoff
+  included_context: Config field name and desired keyRef/env var name, if safe.
+  excluded_context: Raw secret values and full private config dumps.
+  safety_notes: Verify by audit or harmless use; do not print values.
