@@ -9,7 +9,16 @@ It intentionally starts as plain Python so the schema and behavior are easy to i
 ```bash
 python3 langgraph-router/router.py "rotate a credential safely"
 python3 langgraph-router/router.py "draft product copy for a new feature"
+python3 scripts/route_fixture.py fixtures/tasks/secret-rotation.yaml
 ```
+
+## Validate fixtures
+
+```bash
+python3 scripts/check.py
+```
+
+Fixtures live in `fixtures/tasks/` and are grounded in recurring real tasks from the server.
 
 ## Later
 
