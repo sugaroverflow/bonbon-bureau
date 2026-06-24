@@ -10,7 +10,7 @@ Bonbon Bureau needs a popular orchestration tool/library, but should preserve na
 
 ## Decision
 
-Use OpenClaw as the multi-agent runtime foundation. Use LangGraph as an optional dispatcher/supervisor layer for Operator workflows.
+Use OpenClaw as the multi-agent runtime foundation. Use LangGraph as an optional dispatcher/supervisor layer for Miette/Operator workflows.
 
 ## Consequences
 

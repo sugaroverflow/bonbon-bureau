@@ -5,7 +5,7 @@ Bonbon Bureau is a way to explain a personal multi-agent setup without pretendin
 ## Core contrast
 
 - **Named agents**: taste, continuity, domain judgment, trust.
-- **Operator**: routing, status, escalation.
+- **Miette**: Operator agent for routing, status, and escalation.
 - **Candyland**: future local worker factory for chores.
 
 ## Useful framing

@@ -6,7 +6,7 @@ Bonbon Bureau is a control-plane pattern for named personal agents.
 
 1. **Named agents are trusted collaborators, not disposable workers.**
    They keep continuity, taste, domain judgment, and personality.
-2. **The Operator routes; it does not replace specialists.**
+2. **Miette routes; she does not replace specialists.**
    It should classify, hand off, track status, and escalate.
 3. **OpenClaw owns agent runtime concerns.**
    Workspaces, sessions, tools, channel routing, and per-agent state stay in OpenClaw.
@@ -28,9 +28,9 @@ Each agent should have its own:
 - state/session store
 - channel/account binding where needed
 
-### Operator
+### Miette, the Operator
 
-Operator is the control-plane agent. It decides:
+Miette is the control-plane agent. She decides:
 
 - who should handle a task
 - whether a task needs clarification
@@ -46,7 +46,7 @@ A small dispatcher graph can provide repeatable routing:
 intake → classify → choose route → prepare handoff → record status
 ```
 
-Use handoffs when a specialist should take over. Use bounded specialist calls when Operator should retain ownership.
+Use handoffs when a specialist should take over. Use bounded specialist calls when Miette should retain ownership.
 
 ### Candyland boundary
 
@@ -55,6 +55,10 @@ Candyland is intentionally out of near-term scope. It represents a future local 
 ### Jellybean Junction boundary
 
 Jellybean Junction is a possible future connector between Bonbon Bureau and Candyland.
+
+## Idea Pantry
+
+Future ideas, sketches, and not-yet decisions belong in the Idea Pantry rather than the main architecture path. This keeps the Bureau demo-able while preserving cute maybe-later ideas.
 
 ## Data boundaries
 

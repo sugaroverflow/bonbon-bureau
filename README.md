@@ -9,7 +9,7 @@ The core idea:
 ```text
 Human
   ↓
-Operator / dispatcher
+Miette / Operator-dispatcher
   ├─ routes product/taste/building work → named specialist agents
   ├─ routes infra/secrets/safety work    → infra specialist agents
   ├─ routes monitoring/source work       → monitoring agents
@@ -21,6 +21,7 @@ Operator / dispatcher
 - **Bonbon Bureau** — the server/setup of named agents and the operator control plane.
 - **Candyland** — future local factory / worker-hive environment for boring chores.
 - **Jellybean Junction** — possible future connector between Bonbon Bureau and Candyland.
+- **Idea Pantry** — parking lot for future ideas, sketches, and maybe-later architecture.
 
 ## What this repo is
 
@@ -37,6 +38,7 @@ This repo is a scaffold for:
 ## Conventions
 
 - [docs/agent-pr-conventions.md](docs/agent-pr-conventions.md) — how Bonbon Bureau agents label/describe PRs across repos.
+- [docs/idea-pantry.md](docs/idea-pantry.md) — parking lot for future ideas and maybe-later architecture.
 
 ## Initial architecture
 
@@ -44,7 +46,7 @@ Bonbon Bureau leans on OpenClaw for the agent runtime and uses a dispatcher laye
 
 ```text
 OpenClaw = agent runtime, workspaces, sessions, bindings, tools
-LangGraph = optional Operator routing/state machine
+LangGraph = optional Miette routing/state machine
 GitHub repo = public source of truth for docs/schemas/runbooks
 1Password/env/keyRefs = private credential source of truth, outside this repo
 ```

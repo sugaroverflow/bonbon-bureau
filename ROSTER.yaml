@@ -2,9 +2,9 @@
 # Keep this descriptive, not secret-bearing.
 
 agents:
-  - id: operator
-    display_name: Operator
-    role: control-plane dispatcher
+  - id: miette
+    display_name: Miette
+    role: Operator / control-plane dispatcher
     owns:
       - routing
       - status tracking

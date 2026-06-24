@@ -26,7 +26,7 @@ ROUTES: list[tuple[set[str], Route]] = [
     ({"monitor", "watch", "source", "check", "alert", "status"}, Route("monitoring", "glyphie", "handoff", "Monitoring or source-checking language detected.")),
 ]
 
-DEFAULT = Route("coordination", "operator", "bounded_help", "No specialist route was obvious; keep coordination with Operator.")
+DEFAULT = Route("coordination", "miette", "bounded_help", "No specialist route was obvious; keep coordination with Miette.")
 
 
 def classify(text: str) -> Route:
@@ -55,7 +55,7 @@ def handoff_packet(text: str) -> dict:
         "created_at": now,
         "updated_at": now,
         "handoff": {
-            "from": "operator",
+            "from": "miette",
             "to": route.owner,
             "reason": route.reason,
             "ownership": route.ownership,
