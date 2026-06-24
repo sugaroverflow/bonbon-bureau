@@ -32,6 +32,11 @@ This repo is a scaffold for:
 - OpenClaw setup notes
 - a small LangGraph-style dispatcher prototype
 - public-safe runbooks and decision records
+- portable agent PR attribution conventions
+
+## Conventions
+
+- [docs/agent-pr-conventions.md](docs/agent-pr-conventions.md) — how Bonbon Bureau agents label/describe PRs across repos.
 
 ## Initial architecture
 
