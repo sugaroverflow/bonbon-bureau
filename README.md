@@ -43,6 +43,7 @@ This repo is a scaffold for:
 - [docs/credential-sharing.md](docs/credential-sharing.md) — capability-based credential sharing between agents.
 - [docs/langgraph-routing-spike.md](docs/langgraph-routing-spike.md) — router spike shape and non-goals.
 - [docs/router-validation.md](docs/router-validation.md) — dependency-free fixture checks for routing behavior.
+- [docs/similar-factories.md](docs/similar-factories.md) — research notes on nearby agent-factory/control-plane patterns.
 - [docs/agent-files.md](docs/agent-files.md) — public-safe copies of agent workspace files.
 - [RUNBOOKS/install-miette.md](RUNBOOKS/install-miette.md) — install Miette locally from public-safe files.
 - [patterns/](patterns/) — recurring task patterns distilled from real agent work.
