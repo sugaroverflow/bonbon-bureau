@@ -7,11 +7,13 @@ requester: string       # human, operator, or agent id
 status: enum            # proposed | routed | in_progress | waiting | blocked | done | cancelled
 owner: string           # agent id or human
 priority: enum          # low | normal | high | urgent
+deadline: datetime|null # optional deadline or review-by time
 category: enum          # product | infra | monitoring | coordination | research | chore | unknown
 context: string         # public-safe summary; avoid raw private data
 desired_output: string
 next_action: string
-blocked_on: string|null
+blockers: list[string]  # empty when unblocked
+blocked_on: string|null # compatibility field for the primary blocker
 created_at: datetime
 updated_at: datetime
 

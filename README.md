@@ -37,6 +37,10 @@ This repo is a scaffold for:
 
 ## Conventions
 
+- [ROADMAP.md](ROADMAP.md) — phased plan for building the Bureau.
+- [docs/openclaw-integration.md](docs/openclaw-integration.md) — mapping to OpenClaw runtime concepts.
+- [docs/secrets-pattern.md](docs/secrets-pattern.md) — public-safe credential handling pattern.
+- [docs/langgraph-routing-spike.md](docs/langgraph-routing-spike.md) — router spike shape and non-goals.
 - [docs/agent-pr-conventions.md](docs/agent-pr-conventions.md) — how Bonbon Bureau agents label/describe PRs across repos.
 - [docs/idea-pantry.md](docs/idea-pantry.md) — parking lot for future ideas and maybe-later architecture.
 
