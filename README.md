@@ -2,7 +2,7 @@
 
 **A tiny, sugar-powered control plane for a household of OpenClaw agents: dispatch, status, handoffs, and just enough robotics bureaucracy.**
 
-Bonbon Bureau is an experimental pattern for running a small family of named AI agents as trusted collaborators instead of a swarm of interchangeable workers.
+Bonbon Bureau is an experimental pattern for running a small factory of AI agents as trusted collaborators
 
 The core idea:
 
@@ -24,7 +24,7 @@ Operator / dispatcher
 
 ## What this repo is
 
-This repo is a public, conference-talk-friendly scaffold for:
+This repo is a scaffold for: 
 
 - multi-agent operating conventions
 - agent roster and responsibilities
@@ -32,19 +32,6 @@ This repo is a public, conference-talk-friendly scaffold for:
 - OpenClaw setup notes
 - a small LangGraph-style dispatcher prototype
 - public-safe runbooks and decision records
-
-## What this repo is not
-
-- Not a secret store.
-- Not a replacement for OpenClaw agents.
-- Not a full agent framework.
-- Not Candyland yet.
-
-## Safety rule
-
-No credentials, tokens, private channel IDs, production hostnames, raw transcripts, or personal data should be committed here.
-
-See [`SECURITY.md`](SECURITY.md).
 
 ## Initial architecture
 
