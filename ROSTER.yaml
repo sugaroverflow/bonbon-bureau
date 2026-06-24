@@ -26,6 +26,9 @@ agents:
       - building
       - taste
       - writing and strategy
+    heartbeat:
+      cadence: 30m
+      public_behavior: shipped-work, cursor, and assumption updates when useful; otherwise quiet ack
     route_when:
       - product/design judgment is needed
       - creative direction matters
@@ -40,6 +43,9 @@ agents:
       - gateway health
       - cron and automation safety
       - infra runbooks
+    heartbeat:
+      cadence: 2h daytime
+      public_behavior: useful infra/security/channel updates only; otherwise quiet ack
     route_when:
       - credentials or routing are involved
       - infra changes are involved
@@ -53,6 +59,9 @@ agents:
       - source checks
       - change detection
       - status summaries
+    heartbeat:
+      cadence: 30m
+      public_behavior: source/feed/status and assumption updates when useful; otherwise quiet ack
     route_when:
       - watching a source matters
       - external state needs checking over time
